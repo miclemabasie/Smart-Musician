@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.navigation {
+    color: white;
+    background-color: rgb(7, 7, 67);
+    height: 60px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 0
+}
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+
+.nav-items {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
