@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="home">
+    <div class="main-content">
+        <h1>This is the main page of the site</h1>
+        {% for product in products %}
+            {% include "utils/product.html" with product=product%}
+        {% endfor %}
+
+    </div>
+
+    <div class="sidebar">
+        <h3 class="category-header">Categories</h3>
+       {% for cat in active_categories  %}
+         <li class="category"><a href="{{ cat.get_absolute_url }}">{{cat.name}}</a></li>
+       {% endfor %}
+       
+    </div>
+</div>
+  
+{% endblock main %}

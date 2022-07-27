@@ -2,10 +2,9 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from products.views import product_list_view
 
 urlpatterns = [
-    path('products/', include('products.urls', namespace='products')),
+    path('catalog/', include('catalog.urls', namespace='catalog')),
     path('admin/', admin.site.urls),
 ]
 
