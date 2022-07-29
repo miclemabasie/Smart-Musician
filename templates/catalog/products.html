@@ -1,17 +1,15 @@
-{% extends "base.html" %}
+{% extends "catalog.html" %}
 
-{% block title %}
-  {{page_title}}
-{% endblock title %}
-
-{% block main %}
-  {% if category %}
+{% block catalog %}
+    {% if category %}
     <h2>This are the products for the category {{category}}</h2>
-
-
-  {% endif %}
-
-  {% for product in products %}
-    <h2>{{product.name}}</h2>
-  {% endfor %}
-{% endblock main %}
+    
+    
+    {% endif %}
+    <div class="product-content">
+        {% for product in products %}
+            {% include "utils/product.html" %}
+        {% endfor %}
+    </div>
+  
+{% endblock catalog %}

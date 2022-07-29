@@ -57,7 +57,7 @@ class Product(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("products_product", kwargs={"product_slug": self.slug})
+        return reverse("catalog:products_details", kwargs={"slug": self.slug})
     
     def sale_price(self):
         if self.orl_price > self.price:

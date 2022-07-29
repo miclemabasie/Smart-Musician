@@ -77,5 +77,15 @@
 }
 
 .product .product-content .product-title {
-    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    text-decoration: underline;
+    
 }
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+}
+

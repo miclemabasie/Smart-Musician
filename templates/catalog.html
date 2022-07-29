@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+
+<div class="home">
+    {% block catalog %}
+       
+    {% endblock catalog %}
+
+
+
+<div class="sidebar">
+    <h3 class="category-header">Categories</h3>
+    {% for cat in active_categories  %}
+        <li class="category"><a href="{{ cat.get_absolute_url }}">{{cat.name}}</a></li>
+    {% endfor %}
+    
+</div>
+</div>
+  
+{% endblock main %}
